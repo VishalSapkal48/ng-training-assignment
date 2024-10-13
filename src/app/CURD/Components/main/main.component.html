@@ -1,0 +1,54 @@
+<!-- src/app/components/main/main.component.html -->
+<div class="main-container">
+  <div class="content mb-3">
+    <div>
+      <h1>Tasks</h1>
+      <p>All tasks</p>
+    </div>
+    <div>
+      <!-- New Task Button -->
+      <span data-bs-toggle="modal" data-bs-target="#exampleModal3" class="cursor-pointer">
+        <button class="btn btn-warning">New Task</button>
+      </span>
+
+      <!-- Modal for New Task -->
+      <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- Form Component -->
+            <app-form></app-form>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+ <!-- Search Input Field -->
+ <div class="mb-3">
+  <input type="text" class="form-control" placeholder="Search tasks..." />
+</div>
+ 
+
+  <!-- Product List Component -->
+  <app-product-list></app-product-list>
+
+
+  <div class="pagination-container">
+    <!-- Items per page dropdown -->
+    <div class="items-per-page">
+      <label for="itemsPerPage">Items per page:</label>
+      <input type="number" id="itemsPerPage" min="1" max="100" value="20">
+    </div>
+  
+    <!-- Pagination controls -->
+    <div class="pagination-controls">
+      <button class="btn first" disabled>⏮ First</button>
+      <button class="btn prev" disabled>◀ Prev</button>
+      <span class="page-number">1</span>
+      <button class="btn next">Next ▶</button>
+      <button class="btn last">Last ⏭</button>
+    </div>
+  </div>
+  
+</div>

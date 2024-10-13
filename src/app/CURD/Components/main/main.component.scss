@@ -1,0 +1,132 @@
+.main-container {
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.content p {
+  margin: 0;
+}
+
+.btn-warning {
+  background-color: #f0ad4e;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #ec971f;
+}
+
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+/* Align the search input to the right */
+.mb-3 input {
+  max-width: 300px;
+  margin-left: auto;
+  display: block;
+}
+
+/* Modal customization (optional) */
+.modal-content {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.pagination-container {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+
+.items-per-page select {
+  padding: 5px;
+  margin-left: 5px;
+}
+
+.pagination-buttons button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination-buttons button[disabled] {
+  cursor: not-allowed;
+  background-color: #e9ecef;
+}
+/* Container for pagination */
+.pagination-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  margin: 20px 0;
+}
+
+/* Items per page dropdown */
+.items-per-page label {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.items-per-page input {
+  width: 60px;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Pagination controls */
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination-controls .btn {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-controls .btn:disabled {
+  color: #999;
+  background-color: #eee;
+  cursor: not-allowed;
+}
+
+.pagination-controls .btn:hover:not(:disabled) {
+  background-color: #ddd;
+}
+
+.page-number {
+  font-size: 16px;
+  font-weight: bold;
+}
